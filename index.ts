@@ -61,14 +61,14 @@ class SkimmingERT extends TimeToReadStrategy {
 class SpeedReadingERT extends TimeToReadStrategy {
   protected readingSpeed = 441;
   protected comprehensionLevel: ComprehensionLevel = "Low";
-  protected mode: ReadingMode = "skimming";
+  protected mode: ReadingMode = "speedreading";
 }
 
 // Concrete strategy class for standard reading mode
 class StandardERT extends TimeToReadStrategy {
   protected readingSpeed = 238;
   protected comprehensionLevel: ComprehensionLevel = "Low";
-  protected mode: ReadingMode = "skimming";
+  protected mode: ReadingMode = "standard";
 }
 
 // Create and configure the HTTP server
