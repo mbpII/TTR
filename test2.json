@@ -1,0 +1,27 @@
+{
+  "url": "http://newyorker.com/article",
+  "wordCount": 1000,
+  "results": [
+    {
+      "mode": "standard",
+      "estimatedReadingTimeMinutes": 5,
+      "satelliteData": {
+        "comprehensionLevel": "High"
+      }
+    },
+    {
+      "mode": "speedreading",
+      "estimatedReadingTimeMinutes": 4,
+      "satelliteData": {
+        "comprehensionLevel": "Moderate"
+      }
+    },
+    {
+      "mode": "skimming",
+      "estimatedReadingTimeMinutes": 2,
+      "satelliteData": {
+        "comprehensionLevel": "Low"
+      }
+    }
+  ]
+}
