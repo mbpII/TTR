@@ -72,7 +72,7 @@ class StandardERT extends TimeToReadStrategy {
 }
 
 // Create and configure the HTTP server
-serve({
+const server = Bun.serve({
   port: 3000,
   async fetch(request: Request): Promise<Response> {
     // Extract URL from request
@@ -161,3 +161,5 @@ serve({
     }
   },
 });
+
+console.log(`Server started on port ${server.port}`);
