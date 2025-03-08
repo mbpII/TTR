@@ -66,14 +66,6 @@ TTR analyzes the content of webpages to calculate estimated reading times based 
 - **Speed Reading**: 300 words per minute with moderate comprehension
 - **Skimming**: 500 words per minute with low comprehension
 
-of if local hosted you can set your own values.
-## License
-
-This project is licensed under the **Apache License 2.0**. You are free to use, modify, and distribute this software under the terms of the license.
-
-## Contributing
-
-Contributions are welcome! Feel free to open an issue or submit a pull request on GitHub.
 
 ## Future Plans
 
@@ -82,5 +74,4 @@ Contributions are welcome! Feel free to open an issue or submit a pull request o
 - Maybe a llm summerization
 - Routing to specific reading modes
 ---
-
-*TTR: Know before you read.*
+# TTR
