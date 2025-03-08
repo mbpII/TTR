@@ -1,6 +1,3 @@
-// Import the serve function from the Bun framework
-import { serve } from "bun";
-
 // Define the possible reading modes and comprehension levels as type unions
 type ReadingMode = "standard" | "speedreading" | "skimming";
 type ComprehensionLevel = "High" | "Moderate" | "Low";
@@ -81,12 +78,21 @@ const server = Bun.serve({
     // Get website from URL path and validate
     let websiteInput: string = url.pathname.slice(1);
     if (!websiteInput || websiteInput.trim() === "") {
-      const errorResponse: ErrorResponse = {
-        error: "Missing website in URL.",
-      };
-      return new Response(JSON.stringify(errorResponse), {
+      const readme = await Bun.file("README.md").text();
+      const html = `
+        <html>
+          <body>
+            <h1>Error: Missing website in URL</h1>
+            <p>Please provide a website URL to analyze.</p>
+            <hr>
+            <h2>Help ?</h2>
+            <pre>${readme}</pre>
+          </body>
+        </html>
+      `;
+      return new Response(html, {
         status: 400,
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "text/html" },
       });
     }
 
