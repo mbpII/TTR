@@ -1,3 +1,4 @@
+import { marked } from "marked";
 // Define the possible reading modes and comprehension levels as type unions
 type ReadingMode = "standard" | "speedreading" | "skimming";
 type ComprehensionLevel = "High" | "Moderate" | "Low";
@@ -86,7 +87,7 @@ const server = Bun.serve({
             <p>Please provide a website URL to analyze.</p>
             <hr>
             <h2>Help ?</h2>
-            <pre>${readme}</pre>
+            <pre>${marked(readme)}</pre>
           </body>
         </html>
       `;
