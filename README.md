@@ -73,5 +73,3 @@ TTR analyzes the content of webpages to calculate estimated reading times based 
 - Support for multiple links at once with with incremental reading times
 - Maybe a llm summerization
 - Routing to specific reading modes
----
-# TTR
